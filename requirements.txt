@@ -1,7 +1,13 @@
 langchain
 langchain-openai
+langchain-core
 python-dotenv
 requests
 beautifulsoup4
 tiktoken
 langgraph
+duckduckgo-search
+typing
+json
+urllib
+os
