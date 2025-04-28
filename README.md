@@ -2,32 +2,36 @@
 
 An interactive Streamlit application that lets you research any company, generate AI/GenAI use cases for its market, and compile implementation resources. It uses a modular **agent** architecture orchestrated by a `MasterAgent` to run three steps in sequence:
 
+> 🔗 **Live Demo**: [Click here](https://1aryantyagi-instaresz-assessment-app-4diyhb.streamlit.app/)
+
+## How It Works
+
 1. **Research Agent**  
-   Scrapes the web and Wikipedia for raw company data using DuckDuckGo queries and BeautifulSoup.
+   Scrapes the web and Wikipedia for raw company information using DuckDuckGo search and BeautifulSoup parsing.
 
 2. **Market Analysis Agent**  
-   Uses GPT-4 (via LangChain) to propose AI/GenAI use cases tailored to the company’s market.
+   Uses GPT-4 (via LangChain) to suggest customized AI/GenAI use cases based on the company's industry.
 
 3. **Resource Agent**  
-   Gathers implementation plans, public datasets, pre-trained models, and related research papers.
+   Collects practical resources including implementation plans, public datasets, pre-trained models, and research papers.
 
 ---
 
 ## Features
 
-- **Streamlit UI**  
-  - Health-check endpoint  
-  - Company-name input  
-  - Interactive, expandable display of findings  
+- **Streamlit UI**
+  - Health-check endpoint
+  - Company name input field
+  - Interactive, expandable display of results
 
-- **Modular Agents**  
-  - `agents/research_agent.py`  
-  - `agents/market_analysis_agent.py`  
-  - `agents/resource_agent.py`  
-  - `agents/tools/research.py` (DuckDuckGo + BeautifulSoup scraper)  
+- **Modular Agents**
+  - `agents/research_agent.py` — Research scraping agent
+  - `agents/market_analysis_agent.py` — AI use case generator
+  - `agents/resource_agent.py` — Resource compilation agent
+  - `agents/tools/research.py` — DuckDuckGo + BeautifulSoup scraper
 
-- **Orchestration**  
-  - `main.py` defines `MasterAgent` to coordinate the workflow  
+- **Orchestration**
+  - `main.py` defines the `MasterAgent` to coordinate the full workflow
 
 ---
 
