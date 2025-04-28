@@ -1,6 +1,6 @@
 ## Company Analysis App (instaresz_assessment)
 
-An interactive Streamlit application that lets you research any company, generate AI/GenAI use cases for its market, and compile implementation resources. It uses a modular **agent** architecture orchestrated by a `MasterAgent` to run three steps in sequence:
+An interactive Streamlit application that lets you research any company or industry, generate AI/GenAI use cases for its market, and compile implementation resources. It uses a modular **agent** architecture orchestrated by a `MasterAgent` to run three steps in sequence:
 
 > 🔗 **Live Demo**: [Click here](https://1aryantyagi-instaresz-assessment-app-4diyhb.streamlit.app/)
 
